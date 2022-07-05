@@ -1,19 +1,20 @@
 #include "holberton.h"
 
 /**
- * main - Prints Holberton as a message.
+ * main - Print "Holberton"
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int str[] = {72, 111, 108, 98, 101, 114, 116, 111, 110};
-	int count, sz;
+	int i = 0;
+	char name_of_school[] = "Holberton";
 
-	sz = sizeof(str) / sizeof(int);
-	for (count = 0; count < sz; count++)
+	while (i < 9)
 	{
-		_putchar(str[count]);
+		_putchar(name_of_school[i]);
+		i++;
 	}
 	_putchar('\n');
 	return (0);
