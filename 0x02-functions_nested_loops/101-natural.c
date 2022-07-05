@@ -1,43 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - sums 3-5_cous - Entry point
+ * main - Prints natural numbers below 1024 that are
+ * multiples of 3 or 5
  *
- * Return:  (0)
+ * Return: Always 0.
  */
 
 int main(void)
 {
-	int i = 0;
-	int m3 = 3;
-	int m5 = 5;
-	int sum = 0;
-	int lim = 1024;
+	int a, b;
 
-	while (i == 0)
+	for (a = 1; a < 1024; a++)
 	{
-
-		if (m3 < lim)
-		{
-			sum += m3;
-			m3 += 3;
-		}
-
-		if (m5 < lim && (m5 % 3) != 0)
-		{
-			sum += m5;
-			m5 += 5;
-		}
-		else if (m5 % 3 == 0)
-		{
-			m5 += 5;
-		}
-
-		if (m3 >= lim && m5 >= lim)
-		{
-			i = 1;
-		}
+		if ((a % 3) == 0 || (a % 5) == 0)
+			b += a;
 	}
-	printf("%d\n", sum);
+	printf("%d\n", b);
 	return (0);
 }
