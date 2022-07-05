@@ -1,21 +1,16 @@
 #include "holberton.h"
 
 /**
- * print_alphabet - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * print_alphabet - Prints alphabets 'a - z'
  */
 
 void print_alphabet(void)
 {
-	char alp = 'a';
+	char c;
 
-	while (alp <= 'z')
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar (alp);
-		alp++;
-
+		_putchar(c);
 	}
-	_putchar ('\n');
-
+	_putchar('\n');
 }
