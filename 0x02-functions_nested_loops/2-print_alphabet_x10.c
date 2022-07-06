@@ -1,13 +1,16 @@
-#include "holberton.h"
 #include "main.h"
 /**
- * add - adds two integers and returns the result
- * @a: an integer to add to b
- * @b: an integer to add to a
- * Return: Void.
- */
-
-int add(int a, int b)
+ * print_alphabet - function to print abc
+ *
+ * Return: 0
+ **/
+void print_alphabet(void)
 {
-	return (a + b);
+char c;
+for (c = 'a'; c <= 'z'; c++)
+{
+
+_putchar(c);
+}
+_putchar('\n');
 }
