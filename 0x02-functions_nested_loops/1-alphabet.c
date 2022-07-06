@@ -1,4 +1,4 @@
-#include <studio.h>
+#include <stdio.h>
 /**
  * print_alphabet - function to print abc
  *
